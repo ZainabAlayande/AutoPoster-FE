@@ -1,0 +1,117 @@
+.top-nav {
+    background-color: white;
+    display: flex;
+    height: 9%;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #B1B1B1;
+    /* justify-content: center; */
+    /* border: 1px solid yellow; */
+    /* padding: 1%; */
+}
+
+.right-container{
+    /* border: 1px solid black; */
+    display: flex;
+    height: 100%;
+    width: 10%;
+    align-items: center;
+    /* padding: auto; */
+    padding-right: 40%;
+    margin-left: 10.5%;
+    /* justify-content: center; */
+}
+
+
+.label-name{
+  font-size: 19px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  margin-left: 10px;
+  margin-top: 22px;
+  color: #343C6A;
+}
+
+
+.search{
+    background-color: #F5F7FA;
+    border-radius: 50%;
+    margin-left: 50%;
+    /* border: 1px solid red; */
+    width: 200vw;
+    height: 3vh;
+}
+
+
+.buttons{
+    display: flex;
+    align-items: center;
+    margin-left: 70%;
+    /* border: 1px solid red; */
+    height: 8vh;
+    width: 51%;
+    /* justify-content: center; */
+}
+
+
+.search-image, .notification-image, .setting-image, .profile-image{
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    /* border: 1px solid green;  */
+    background-color: #F5F7FA; 
+    border-radius: 50%; 
+    width: 18px; 
+    height: 27px;
+}
+
+
+
+/* Centering images within their divs */
+.setting-button, .notification-button, .profile-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid green; */
+    background-color: #F5F7FA;
+    border-radius: 50%; 
+    width: 35px;
+    cursor: pointer; 
+    height: 35px;
+    margin: 0 7px;
+}
+
+
+.profile-button {
+    width: 48px; 
+    height: 48px;
+}
+
+
+.profile-image{
+    width: 25px; 
+    height: 35px;
+}
+
+
+.search {
+    display: flex;
+    align-items: center;
+    background-color: #F5F7FA;
+    /* border: 1px solid red; */
+    padding: 5px;
+    border-radius: 15px;
+}
+
+
+.search-image {
+    margin-right: 5px;
+}
+
+input[type="text"] {
+    border: none;
+    outline: none;
+    background: none;
+    flex-grow: 1;
+    border-radius: 15px;
+}
