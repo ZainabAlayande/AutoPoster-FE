@@ -1,3 +1,166 @@
-.linkedln-general-container{
+.linkedln-body {
+    margin-left: 20px;
+    margin-top: 15px;
+    width: 84vw;
+}
+
+.linkedln-general-container {
     display: flex;
+}
+
+.linkedln-box-container {
+    display: flex;
+    cursor: pointer;
+}
+
+.first-div {
+    border-radius: 50%;
+    width: 5vw;
+    height: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E7EDFF;
+}
+
+.first-div img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+.linkedln-box {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recent-transaction-text {
+    color: #343C6A;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+.table-subject {
+    display: flex;
+    color: #1814F3;
+}
+
+.scheduled-post {
+    cursor: pointer;
+}
+
+.live-post {
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    color: #718EBF;
+    border-bottom: solid 1px #E6EFF5;
+}
+
+.action-buttons button {
+    margin-right: 8px;
+    border-radius: 10px;
+    width: 5vw;
+    cursor: pointer;
+}
+
+.view-button {
+    color: #123288;
+    border: solid 1px #123288;
+}
+
+.delete-button {
+    color: #FE5C73;
+    border: solid 1px #FE5C73;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    margin: 0 5px;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    color: #000;
+}
+
+.pagination a:hover {
+    background-color: #ddd;
+}
+
+.linkedln-overall-table {
+    width: 79vw;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.slide-in-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 33vw;
+    height: 100vh;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transform: translateX(100%);
+    animation: slide-in 0.3s forwards;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel-content {
+    margin-top: 20px;
+}
+
+.panel-content label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.panel-content input, .panel-content textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.schedule-button {
+    background-color: #1814F3;
+    color: white;
+    padding: 10px;
 }

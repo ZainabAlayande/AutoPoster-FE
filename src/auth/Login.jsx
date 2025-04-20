@@ -3,8 +3,15 @@ import '../styles/Login.css';
 
 const Login = () => {
   const googleAuthUrl = `https://accounts.google.com/o/oauth2/auth?client_id=YOUR_GOOGLE_CLIENT_ID&redirect_uri=http://localhost:3000/callback&response_type=code&scope=openid%20profile%20email`;
-  const linkedInAuthUrl = `https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=863167ir2v99b8&redirect_uri=http://localhost:5173/callback&scope=openid%20profile%20email`;
+  const linkedInAuthUrl = `https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=863167ir2v99b8&redirect_uri=http://localhost:5173/callback&state=autoposter&scope=openid%20profile%20email%20w_member_social`;
+  // const linkedInAuthUrl = `https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=863167ir2v99b8&redirect_uri=http://localhost:5173/callback&state=${generateRandomState()}&scope=openid%20profile%20email%20w_member_social`;
 
+
+
+  function generateRandomState() {
+    return Math.random().toString(36).substring(2);
+  }
+  
 
   return (
     <div className='general-container'>

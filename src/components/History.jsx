@@ -5,7 +5,7 @@ import '../styles/ContentLibrary.css';
 
 
 
-const ContentLibrary = () => {
+const History = () => {
     return (
       <div className="content-library-gen-container">
 
@@ -19,7 +19,7 @@ const ContentLibrary = () => {
         </div>
 
         <div className="side">
-          Content-Library!
+          History!
         </div>
       </div>
 
@@ -28,4 +28,4 @@ const ContentLibrary = () => {
     );
   };
   
-  export default ContentLibrary;
+  export default History;

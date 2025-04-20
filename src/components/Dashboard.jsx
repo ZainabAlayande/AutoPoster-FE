@@ -5,8 +5,6 @@ import TopNav from './TopNav';
 import DashboardBody from '../body/DashboardBody';
 
 const Dashboard = () => {
-  const name = localStorage.getItem('fullName');
-  const email = localStorage.getItem('userEmail');
 
   return (
     <div className="dashboard-container">
@@ -15,7 +13,7 @@ const Dashboard = () => {
       </div>
       
       <div className="main-content">
-        <TopNav title="Dashboard"/>
+        {/* <TopNav title="Dashboard"/> */}
         <DashboardBody />
       </div>
     </div>

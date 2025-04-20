@@ -1,10 +1,11 @@
 import React from "react";
 import SideBar from "../components/Sidebar";
 import TopNav from "../components/TopNav";
-import '../styles/Linkedln.css'
+import '../styles/Linkedln.css';
+import LinkedlnBody from "../body/LinkedlnBody";
 
 
-const PostSchedule = () => {
+const Linkedln = () => {
   return (
     <div className="linkedln-general-container">
       <div className="">
@@ -13,11 +14,11 @@ const PostSchedule = () => {
 
       <div className="div">
         <div className="">
-          <TopNav title="Post Schedule"/>
+          <TopNav title="Post Schedule" />
         </div>
 
         <div className="">
-          Linkedln
+          <LinkedlnBody />
         </div>
       </div>
 
@@ -25,4 +26,4 @@ const PostSchedule = () => {
   );
 };
 
-export default PostSchedule;
+export default Linkedln;

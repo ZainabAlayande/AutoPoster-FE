@@ -2,6 +2,7 @@ import React from "react";
 import Sidebar from './Sidebar';
 import TopNav from './TopNav';
 import '../styles/PostSchedule.css';
+import PostScheduleBody from "../body/PostScheduleBody";
 
 
 const PostSchedule = () => {
@@ -13,7 +14,7 @@ const PostSchedule = () => {
 
       <div className="div">
         <div className="side">
-          <TopNav title="Post Schedule"/>
+          {/* <TopNav title="Post Schedule"/> */}
         </div>
 
         <div className="side">

@@ -3,10 +3,13 @@ import { useNavigate } from 'react-router-dom';
 import '../styles/SideBar.css';
 import APLogo from '../assets/APLogo.svg';
 import Logo from '../assets/Logo.png';
-import Contentlib from '../assets/Contentlib.svg';
-import Home from '../assets/DashboardImg.svg';
-import Settings from '../assets/SettingImg.svg';
-import ContentLibrary from './Content-Library';
+import Schedule from '../assets/calendar.png';
+import Home from '../assets/dashboard.png';
+import Settings from '../assets/setting.png';
+import Drafts from '../assets/draft.png';
+import History from '../assets/history.png';
+import MediaLibrary from '../assets/library.png';
+import ContentLibrary from './History';
 import ArrowDown from '../assets/ArrowDown.svg';
 
 const SideBar = () => {
@@ -36,7 +39,7 @@ const SideBar = () => {
           {/* <img className="" src={Logo} alt="AP Logo"/> */}
         </div>
         <div className="business-name">
-          <h2 className="business-name-text">AutoPoster.</h2>
+          <h2 className="business-name-text">Autoposter.</h2>
         </div>
       </div>
 
@@ -52,26 +55,42 @@ const SideBar = () => {
         <div className="sidebar-item-container">
           <div className={`sidebar-item ${activeItem === 'post-schedule' ? 'active' : ''}`}
             onClick={handlePostScheduleClick} >
-            <img className="side-bar-logo" src={Contentlib} alt="AP Logo" />
-            <p className='side-bar-text'>Post Schedule</p>
-            <img className="arrow-icon" src={ArrowDown} alt="Toggle Dropdown" onClick={toggleDropdown} />
+            <img className="side-bar-logo" src={Schedule} alt="AP Logo" />
+            <p className='side-bar-text'>Scheduled</p>
+            {/* <img className="arrow-icon" src={ArrowDown} alt="Toggle Dropdown" onClick={toggleDropdown} /> */}
           </div> 
         </div>
-        {showDropdown && (<div className="dropdown"> <div className="dropdown-item"
+        {/* {showDropdown && (<div className="dropdown"> <div className="dropdown-item"
           onClick={() => handleItemClick('/schedule/linkedln', 'linkedln')}> LinkedIn
         </div>
 
           <div className="dropdown-item"
             onClick={() => handleItemClick('/schedule/instagram', 'instagram')}> Instagram </div>
         </div>
-        )}
+        )} */}
         
         <div
           className={`sidebar-item ${activeItem === 'content-library' ? 'active' : ''}`}
           onClick={() => handleItemClick('/content-library', 'content-library')}
         >
-          <img className="side-bar-logo" src={Settings} alt="AP Logo" />
-          <p className='side-bar-text'>Content Library</p>
+          <img className="side-bar-logo" src={Drafts} alt="AP Logo" />
+          <p className='side-bar-text'>Drafts</p>
+        </div>
+
+        <div
+          className={`sidebar-item ${activeItem === 'content-library' ? 'active' : ''}`}
+          onClick={() => handleItemClick('/content-library', 'content-library')}
+        >
+          <img className="side-bar-logo" src={History} alt="AP Logo" />
+          <p className='side-bar-text'>History</p>
+        </div>
+
+        <div
+          className={`sidebar-item ${activeItem === 'content-library' ? 'active' : ''}`}
+          onClick={() => handleItemClick('/content-library', 'content-library')}
+        >
+          <img className="side-bar-logo" src={MediaLibrary} alt="AP Logo" />
+          <p className='side-bar-text'>Media Library</p>
         </div>
 
         <div
@@ -95,3 +114,5 @@ const SideBar = () => {
 };
 
 export default SideBar;
+
+

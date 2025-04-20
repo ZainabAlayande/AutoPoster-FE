@@ -1,10 +1,11 @@
 import React from "react";
 import SideBar from "../components/Sidebar";
 import TopNav from "../components/TopNav";
-import '../styles/Instagram.css'
+import '../styles/Instagram.css';
+import InstagramBody from "../body/InstagramBody";
 
 
-const PostSchedule = () => {
+const Instagram = () => {
   return (
     <div className="instagram-general-container">
       <div className="">
@@ -13,11 +14,11 @@ const PostSchedule = () => {
 
       <div className="div">
         <div className="">
-          <TopNav title="Post Schedule"/>
+          <TopNav title="Post Schedule" />
         </div>
 
         <div className="">
-          Instagram
+          <InstagramBody />
         </div>
       </div>
 
@@ -25,4 +26,4 @@ const PostSchedule = () => {
   );
 };
 
-export default PostSchedule;
+export default Instagram;
