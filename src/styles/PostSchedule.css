@@ -1,3 +1,51 @@
 .post-gen-container{
     display: flex;
 }
+
+.schedule-content {
+    width: 100%;
+    max-width: 1000px;
+    padding: 35px 35px;
+    border-radius: solid 1px red;
+}
+
+.schedule-heading{
+    display: flex;
+    border-radius: solid 1px blue;
+    color: #152436;
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    margin-bottom: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.schedule-new-post-text{
+    background-color: #3780EC; /* Purple or any preferred color */
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+  
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+  
+    border-radius: 16px;
+    cursor: pointer;
+  
+    /* Easily adjustable size */
+    width: 400px;
+    height: 50px;
+}
+
+.schedule-new-post-text{
+    margin-left: 300px;
+}
+
+.schedule-new-post-text:hover {
+    background-color: #594ef2;
+    transform: scale(1.03);
+    transition: all 0.2s ease;
+  }
