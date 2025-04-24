@@ -17,7 +17,7 @@ const PostSchedule = () => {
           {/* <TopNav title="Post Schedule"/> */}
         </div>
 
-        <div className="schedule-heading">
+        <div className="">
           <PostScheduleBody/>
         </div>
       </div>

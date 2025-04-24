@@ -1,5 +1,7 @@
 import React from "react";
 import ScheduleTable from "./ScheduleTable";
+import '../styles/PostSchedule.css';
+
 
 const PostScheduleBody = () => {
 
@@ -20,7 +22,7 @@ const PostScheduleBody = () => {
         },
         {
           platform: "Instagram",
-          title: "",
+          title: "Starting a New Job",
           date: "2025-04-27",
           time: "11:30 AM",
           status: "Scheduled",
@@ -41,7 +43,7 @@ const PostScheduleBody = () => {
           },
           {
             platform: "Instagram",
-            title: "",
+            title: "Starting a New Job",
             date: "2025-04-27",
             time: "11:30 AM",
             status: "Scheduled",

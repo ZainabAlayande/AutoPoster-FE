@@ -3,15 +3,16 @@
 }
 
 .schedule-content {
-    width: 100%;
-    max-width: 1000px;
+    width: 123%;
+    /* max-widtsh: 1100px; */
+    overflow-y:visible;
     padding: 35px 35px;
-    border-radius: solid 1px red;
+    border: solid 1px red;
 }
 
 .schedule-heading{
     display: flex;
-    border-radius: solid 1px blue;
+    border: solid 1px blue;
     color: #152436;
     font-size: 25px;
     font-family: 'Inter', sans-serif;
@@ -22,30 +23,121 @@
 }
 
 .schedule-new-post-text{
-    background-color: #3780EC; /* Purple or any preferred color */
+    background-color: #3780EC; 
     color: white;
     font-size: 18px;
     font-weight: 500;
     font-family: 'Inter', sans-serif;
-  
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     justify-content: center;
-  
     border-radius: 16px;
     cursor: pointer;
-  
-    /* Easily adjustable size */
     width: 400px;
     height: 50px;
+    margin-left: 200px;
+    border: solid 2px green;
 }
 
-.schedule-new-post-text{
-    margin-left: 300px;
-}
+
 
 .schedule-new-post-text:hover {
     background-color: #594ef2;
     transform: scale(1.03);
     transition: all 0.2s ease;
   }
+
+
+.table-container {
+    overflow-x: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 1.5rem;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th,
+  .table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-top: 1px solid #e5e7eb;
+  }
+  
+  .table thead {
+    background-color: #f3f4f6; 
+  }
+  
+  .platform-label {
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    display: inline-block;
+    color: white;
+  }
+  
+  .platform-LinkedIn {
+    background-color: #0077B5;
+  }
+  
+  .platform-Twitter {
+    background-color: #1DA1F2;
+  }
+  
+  .platform-Instagram {
+    background-color: #E1306C;
+  }
+  
+  .status-live {
+    color: #16a34a; 
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+  
+  .status-scheduled {
+    color: #ca8a04;
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 0.75rem;
+    color: #2563eb; 
+  }
+
+  
+.action-buttons button {
+    padding: 0.35rem 0.75rem;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .action-buttons button[title="Edit"] {
+    background-color: #e0f2fe; 
+    color: #0284c7;
+  }
+  
+  .action-buttons button[title="Edit"]:hover {
+    background-color: #bae6fd;
+  }
+  
+  .action-buttons button[title="Delete"] {
+    background-color: #fee2e2; 
+    color: #dc2626; 
+  }
+  
+  .action-buttons button[title="Delete"]:hover {
+    background-color: #fecaca;
+  }
+  
