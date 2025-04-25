@@ -14,10 +14,10 @@ const PostSchedule = () => {
 
       <div className="div">
         <div className="side">
-          {/* <TopNav title="Post Schedule"/> */}
+          {/* <TopNav title="Scheduled Post"/> */}
         </div>
 
-        <div className="">
+        <div className="post-schedule-body">
           <PostScheduleBody/>
         </div>
       </div>
