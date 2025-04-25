@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useState }  from "react";
 import ScheduleTable from "./ScheduleTable";
 import '../styles/PostSchedule.css';
+import SchedulePostModal from "../modal/SchedulePostModal";
 
+const platforms = ['LinkedIn', 'Twitter', 'Instagram'];
 
 const PostScheduleBody = () => {
+
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const postDetails = Object.fromEntries(formData.entries());
+    console.log('Scheduled Post:', postDetails);
+    setModalOpen(false);
+  };
 
     const data = [
         {
@@ -82,11 +94,19 @@ const PostScheduleBody = () => {
     return (
       <div className="schedule-content">
         
+        <div className="schedule">
         <div className="schedule-heading">
         Scheduled Posts
+        </div>
 
         <div className="schedule-new-post-text">
-            <p>+ Schedule New Post</p>
+         <button onClick={() => setModalOpen(true)}>+ Schedule New Post</button>
+            <SchedulePostModal
+        isOpen={isModalOpen}
+        onClose={() => setModalOpen(false)}
+        onSubmit={handleSubmit}
+        platforms={platforms}
+      />
         </div>
         </div>
 

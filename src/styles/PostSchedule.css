@@ -2,12 +2,20 @@
     display: flex;
 }
 
-.schedule-content {
-    width: 123%;
+.post-schedule-body {
+    max-height: 600px;
+  overflow-y: auto;
+}
+
+.schedule {
+    /* width: 95%; */
+    display: flex;
     /* max-widtsh: 1100px; */
-    overflow-y:visible;
+    /* overflow-y:visible; */
     padding: 35px 35px;
     border: solid 1px red;
+    align-items: center;
+    justify-content: center;
 }
 
 .schedule-heading{
@@ -18,6 +26,7 @@
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     margin-bottom: 25px;
+    margin-right: 45px;
     align-items: center;
     justify-content: center;
 }
